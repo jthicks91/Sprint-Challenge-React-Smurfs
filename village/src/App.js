@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import "./App.css";
-import SmurfForm from "./components/SmurfForm";
+// import SmurfForm from "./components/SmurfForm";
 import axios from "axios";
 
 import AddSmurfForm from "./components/AddSmurfForm";
@@ -62,7 +62,7 @@ export default class App extends Component {
               <Smurfs
                 {...props}
                 smurfs={this.state.smurfs}
-                smurfFilename={this.smurfImgFilename}
+                smurfFilename={this.smurfFilename}
               />
             )}
           />
@@ -81,7 +81,7 @@ export default class App extends Component {
                 {...props}
                 updateSmurfs={this.updateSmurfs}
                 smurfs={this.state.smurfs}
-                smurfFilename={this.smurfImgFilename}
+                smurfFilename={this.smurfFilename}
               />
             )}
           />

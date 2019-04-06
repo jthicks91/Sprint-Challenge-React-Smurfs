@@ -1,12 +1,12 @@
 import React from "react";
 import "../App.css";
 
-const images = require.context("./smurf-imgs", true);
+const images = require.context("./Smurf-Images", true);
 
 const SmurfForList = props => {
   let img;
   try {
-    img = images(`./${props.smurfImgFilename(props.name)}`);
+    img = images(`./${props.smurfFilename(props.name)}`);
   } catch (err) {
     img = null;
   }

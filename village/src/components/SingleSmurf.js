@@ -3,9 +3,9 @@ import React from "react";
 import styled from "styled-components";
 import axios from "axios";
 
-import pencil from "./pencil.png";
+import editpencil from "./editpencil.png";
 import "../App.css";
-const images = require.context("./smurf-imgs", true);
+const images = require.context("./Smurf-Images", true);
 
 const SmurfContainerDiv = styled.div`
   display: flex;
@@ -83,7 +83,7 @@ const SingleSmurf = props => {
 
   let img;
   try {
-    img = images(`./${props.smurfImgFilename(smurf.name)}`);
+    img = images(`./${props.smurfFilename(smurf.name)}`);
   } catch (err) {
     img = null;
   }
@@ -96,7 +96,7 @@ const SingleSmurf = props => {
     <SmurfContainerDiv>
       <SmurfButtons>
         <DeleteSpan onClick={deleteSmurf}>X</DeleteSpan>
-        <EditButton onClick={updateSmurf} src={pencil} alt="edit" />
+        <EditButton onClick={updateSmurf} src={editpencil} alt="edit" />
       </SmurfButtons>
 
       <SmurfDiv className="smurf">
