@@ -147,3 +147,5 @@ Add a Router to this application by using React Router.
 
 - [ ] If a user clicks on a smurf, they should be routed to `/smurf/:id` and a single smurf should be displayed on the page.
 - [ ] I know this seems like a small task, but you'll have to get crafty with your data and your logic here.
+
+initial commit 
