@@ -24,6 +24,7 @@ const SmurfDiv = styled.div`
   padding: 8px;
   padding-bottom: 5px;
   padding-top: 7px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
 `;
 
 const P = styled.p`

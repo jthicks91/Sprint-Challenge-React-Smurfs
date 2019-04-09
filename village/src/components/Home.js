@@ -1,6 +1,6 @@
 import React from "react";
 
-// import SmurfsTitle from "village/src/components/SmurfsTitle.png";
+import SmurfsTitle from "./SmurfsTitle.png";
 import "../App.css";
 
 function Home(props) {
@@ -11,7 +11,7 @@ function Home(props) {
 
   return (
     <div className="smurf-home">
-      {/* <img src={SmurfsTitle} alt="smurf title card" /> */}
+      <img src={SmurfsTitle} alt="smurf title card" />
       <button onClick={routeToList}>List Them Smurfs!</button>
     </div>
   );
